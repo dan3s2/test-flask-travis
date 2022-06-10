@@ -9,5 +9,4 @@ install:
   - pip install -r requirements.txt
 # command to run tests
 script:
-  - python unit_tests/test_kebele.py
-  
+  - python src/test_kebele.py
