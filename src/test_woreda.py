@@ -17,9 +17,9 @@ class TestAgroadisory(unittest.TestCase):
 
     def test_single_woreda(self):
 
-        response = self.app.get('http://127.0.0.1:5000/woreda/woreda1',
+        response = self.app.get('http://127.0.0.1:5000/woredas/woreda1',
                                 headers={"Content-Type": "application/json"})
-        print(response)
+        #print(response)
         #self.assertEqual(str, type(response.json['Woreda']))
         self.assertEqual(200, response.status_code)
 
