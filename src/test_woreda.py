@@ -21,7 +21,7 @@ class TestAgroadisory(unittest.TestCase):
                                 headers={"Content-Type": "application/json"})
         # print(response)
         #self.assertEqual(str, type(response.json['Woreda']))
-        self.assertEqual(400, response.status_code)
+        self.assertEqual(200, response.status_code)
 
 
 if __name__ == "__main__":
