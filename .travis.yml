@@ -1,8 +1,6 @@
 language: python
 python:
   - "3.9"
-env:
-  - GITHUB_TOKEN=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
 before_install:
   - python --version
   - pip install -U pip
