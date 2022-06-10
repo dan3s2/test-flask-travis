@@ -1,6 +1,8 @@
 language: python
 python:
   - "3.9"
+env:
+  - GITHUB_TOKEN=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
 before_install:
   - python --version
   - pip install -U pip
@@ -11,3 +13,10 @@ install:
 script:
   - python src/test_kebele.py
   - python src/test_woreda.py
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: main
